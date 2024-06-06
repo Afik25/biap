@@ -1,0 +1,123 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $size-1;
+  .row{
+    width: 100%;
+    height: 10px;
+  }
+  thead,
+  tbody,
+  thead tr,
+  tbody tr{
+    width: 100%;
+  }
+  thead th,
+  tbody th,
+  tbody td{
+    padding: $size-1;
+  }
+  thead tr{
+    background-color: $grey-color-2;
+  }
+  tbody tr{
+    background-color: $grey-color-3;
+  }
+  .col-5{
+    width: 5%;
+  }
+  .col-10{
+    width: 10%;
+  }
+  .col-15{
+    width: 15%;
+  }
+  .col-20{
+    width: 20%;
+  }
+  .col-25{
+    width: 25%;
+  }
+  .col-30{
+    width: 30%;
+  }
+  .col-35{
+    width: 35%;
+  }
+  .col-40{
+    width: 40%;
+  }
+  .col-45{
+    width: 45%;
+  }
+  .col-50{
+    width: 50%;
+  }
+  .col-55{
+    width: 55%;
+  }
+  .col-60{
+    width: 60%;
+  }
+  .col-65{
+    width: 65%;
+  }
+  .col-70{
+    width: 70%;
+  }
+  .col-75{
+    width: 75%;
+  }
+  .col-80{
+    width: 80%;
+  }
+  .col-85{
+    width: 85%;
+  }
+  .col-90{
+    width: 90%;
+  }
+  .col-95{
+    width: 95%;
+  }
+  .col-100{
+    width: 100%;
+  }
+  .text-align-center{
+    text-align: center
+  }
+  .text-align-left{
+    text-align: left
+  }
+  .text-align-right{
+    text-align: right
+  }
+  .text-align-justify{
+    text-align: justify
+  }
+
+}
+.pagination {
+  @include padding(0.5rem);
+  span {
+    margin-right: 0.5rem;
+  }
+  select {
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-right: 1.5rem;
+    border: 1px solid $black-color;
+    background-color: transparent;
+  }
+  .button {
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 1px solid $grey-color-2;
+    padding: 0.3rem !important;
+
+    .icon {
+      color: $grey-color-2;
+    }
+  }
+}
