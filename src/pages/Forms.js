@@ -5,8 +5,8 @@ import Modal from "../components/modal/Modal";
 import Details from "../components/details/Details";
 
 const Forms = () => {
-    const [openModal, setOpenModal] = useState(false);
-    const close = () => setOpenModal(false);
+  const [openModal, setOpenModal] = useState(false);
+  const close = () => setOpenModal(false);
   const [data, setData] = useState({
     general: {
       series: [
@@ -181,50 +181,82 @@ const Forms = () => {
         },
       },
     },
+    formation: {
+      series: [{ name: "Total", data: [2, 5, 3, 45, 2, 5] }],
+      options: {
+        chart: {
+          type: "bar",
+          height: 350,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            borderRadiusApplication: "end",
+            horizontal: true,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        xaxis: {
+          categories: [
+            "Logistique aérienne import",
+            "Prédédouanement DGRAD",
+            "Prédédouanement import - Banques commerciales",
+            "Prédédouanement import - Importateurs",
+            "Prédédouanement import - Transitaires",
+            "Présentation générale du GUICE",
+          ],
+        },
+      },
+    },
   });
-  return (<>
-    <div className="forms">
-      <div className="container">
-        <div className="head">
-          <h1 className="title t-1">Évaluation Volumétrique de la Formation</h1>
-        </div>
-        <div className="body">
-          <div className="section-1">
-            <div className="header">
-              <h1 className="title t-2">
-                Volumétries mensuelles de personnes formées par bureau
-              </h1>
-            </div>
-            <div className="filter">
-              <div className="item">
-                <select>
-                  <option value={""}>All</option>
-                  <option value={"2024"}>2024</option>
-                  <option value={"2023"}>2023</option>
-                  <option value={"2022"}>2022</option>
-                </select>
+  return (
+    <>
+      <div className="forms">
+        <div className="container">
+          <div className="head">
+            <h1 className="title t-1">
+              Évaluation Volumétrique de la Formation
+            </h1>
+          </div>
+          <div className="body">
+            <div className="section-1">
+              <div className="header">
+                <h1 className="title t-2">
+                  Volumétries mensuelles de personnes formées par bureau
+                </h1>
               </div>
-              <button className="button" onClick={() => setOpenModal(true)}>
-                Details
-              </button>
-            </div>
-            <div className="content">
-              <div className="left">
-                <Chart
-                  options={data?.general_percent?.options}
-                  series={data?.general_percent?.series}
-                  type="donut"
-                  width="380"
-                />
+              <div className="filter">
+                <div className="item">
+                  <select>
+                    <option value={""}>All</option>
+                    <option value={"2024"}>2024</option>
+                    <option value={"2023"}>2023</option>
+                    <option value={"2022"}>2022</option>
+                  </select>
+                </div>
+                <button className="button" onClick={() => setOpenModal(true)}>
+                  Details
+                </button>
               </div>
-              <div className="right">
-                <ReactApexChart
-                  options={data?.general?.options}
-                  series={data?.general?.series}
-                  type="area"
-                  height={350}
-                />
-                {/* <table className="table">
+              <div className="content">
+                <div className="left">
+                  <Chart
+                    options={data?.general_percent?.options}
+                    series={data?.general_percent?.series}
+                    type="donut"
+                    width="380"
+                  />
+                </div>
+                <div className="right">
+                  <ReactApexChart
+                    options={data?.general?.options}
+                    series={data?.general?.series}
+                    type="area"
+                    height={350}
+                  />
+                  {/* <table className="table">
                   <thead>
                     <tr>
                       <th className="col-30 text-align-left">Mois</th>
@@ -381,112 +413,113 @@ const Forms = () => {
                     </tr>
                   </tbody>
                 </table> */}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="section-2">
-            <div className="header">
-              <h1 className="title t-2">
-                Volumétries mensuelles des formations par modules
-              </h1>
-            </div>
-            <div className="filter">
-              <div className="item">
-                <select>
-                  <option value={""}>All</option>
-                  <option value={"2024"}>2024</option>
-                  <option value={"2023"}>2023</option>
-                  <option value={"2022"}>2022</option>
-                </select>
+            <div className="section-2">
+              <div className="header">
+                <h1 className="title t-2">
+                  Volumétries mensuelles des formations par modules
+                </h1>
               </div>
-              <div className="item">
-                <select>
-                  <option value={""}>All</option>
-                  <option value={"janvier"}>Janvier</option>
-                  <option value={"fevrier"}>Février</option>
-                  <option value={"mars"}>Mars</option>
-                  <option value={"avril"}>Avril</option>
-                  <option value={"mai"}>Mai</option>
-                  <option value={"juin"}>Juin</option>
-                  <option value={"juillet"}>Juillet</option>
-                  <option value={"aout"}>Août</option>
-                  <option value={"septembre"}>Septembre</option>
-                  <option value={"octobre"}>Octobre</option>
-                  <option value={"novembre"}>Novembre</option>
-                  <option value={"decembre"}>Décembre</option>
-                </select>
+              <div className="filter">
+                <div className="item">
+                  <select>
+                    <option value={""}>All</option>
+                    <option value={"2024"}>2024</option>
+                    <option value={"2023"}>2023</option>
+                    <option value={"2022"}>2022</option>
+                  </select>
+                </div>
+                <div className="item">
+                  <select>
+                    <option value={""}>All</option>
+                    <option value={"janvier"}>Janvier</option>
+                    <option value={"fevrier"}>Février</option>
+                    <option value={"mars"}>Mars</option>
+                    <option value={"avril"}>Avril</option>
+                    <option value={"mai"}>Mai</option>
+                    <option value={"juin"}>Juin</option>
+                    <option value={"juillet"}>Juillet</option>
+                    <option value={"aout"}>Août</option>
+                    <option value={"septembre"}>Septembre</option>
+                    <option value={"octobre"}>Octobre</option>
+                    <option value={"novembre"}>Novembre</option>
+                    <option value={"decembre"}>Décembre</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div className="content">
-              <div className="left">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th className="col-90 text-align-left">
-                        Formation dispensées
-                      </th>
-                      <th className="col-10  text-align-center">Nombre</th>
-                    </tr>
-                  </thead>
-                  <div className="row"></div>
-                  <tbody>
-                    <tr>
-                      <th className="col-90  text-align-left">
-                        Logistique aérienne import
-                      </th>
-                      <td className="col-10  text-align-center">2</td>
-                    </tr>
-                    <tr>
-                      <th className="col-90  text-align-left">
-                        Prédédouanement DGRAD
-                      </th>
-                      <td className="col-10  text-align-center">5</td>
-                    </tr>
-                    <tr>
-                      <th className="col-90  text-align-left">
-                        Prédédouanement import - Banques commerciales
-                      </th>
-                      <td className="col-10  text-align-center">3</td>
-                    </tr>
-                    <tr>
-                      <th className="col-90  text-align-left">
-                        Prédédouanement import - Importateurs
-                      </th>
-                      <td className="col-10  text-align-center">45</td>
-                    </tr>
-                    <tr>
-                      <th className="col-90  text-align-left">
-                        Prédédouanement import - Transitaires
-                      </th>
-                      <td className="col-10  text-align-center">2</td>
-                    </tr>
-                    <tr>
-                      <th className="col-90  text-align-left">
-                        Présentation générale du GUICE
-                      </th>
-                      <td className="col-10  text-align-center">5</td>
-                    </tr>
-                    <tr className="bgc-2">
-                      <th className="col-90  text-align-left">Total</th>
-                      <td className="col-10  text-align-center">62</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div className="right">
-                <Chart
-                  options={data?.formation_module?.options}
-                  series={data?.formation_module?.series}
-                  type="donut"
-                  width="380"
-                />
+              <div className="content">
+                <div className="left">
+                  {/* <table className="table">
+                    <thead>
+                      <tr>
+                        <th className="col-90 text-align-left">
+                          Formation dispensées
+                        </th>
+                        <th className="col-10  text-align-center">Nombre</th>
+                      </tr>
+                    </thead>
+                    <div className="row"></div>
+                    <tbody>
+                      <tr>
+                        <th className="col-90  text-align-left">
+                          Logistique aérienne import
+                        </th>
+                        <td className="col-10  text-align-center">2</td>
+                      </tr>
+                      <tr>
+                        <th className="col-90  text-align-left">
+                          Prédédouanement DGRAD
+                        </th>
+                        <td className="col-10  text-align-center">5</td>
+                      </tr>
+                      <tr>
+                        <th className="col-90  text-align-left">
+                          Prédédouanement import - Banques commerciales
+                        </th>
+                        <td className="col-10  text-align-center">3</td>
+                      </tr>
+                      <tr>
+                        <th className="col-90  text-align-left">
+                          Prédédouanement import - Importateurs
+                        </th>
+                        <td className="col-10  text-align-center">45</td>
+                      </tr>
+                      <tr>
+                        <th className="col-90  text-align-left">
+                          Prédédouanement import - Transitaires
+                        </th>
+                        <td className="col-10  text-align-center">2</td>
+                      </tr>
+                      <tr>
+                        <th className="col-90  text-align-left">
+                          Présentation générale du GUICE
+                        </th>
+                        <td className="col-10  text-align-center">5</td>
+                      </tr>
+                      <tr className="bgc-2">
+                        <th className="col-90  text-align-left">Total</th>
+                        <td className="col-10  text-align-center">62</td>
+                      </tr>
+                    </tbody>
+                  </table> */}
+                  <ReactApexChart options={data?.formation?.options} series={data?.formation?.series} type="bar" height={350} />
+                </div>
+                <div className="right">
+                  <Chart
+                    options={data?.formation_module?.options}
+                    series={data?.formation_module?.series}
+                    type="donut"
+                    width="380"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    {openModal && (
+      {openModal && (
         <Modal
           visibility={true}
           open={close}
@@ -494,7 +527,7 @@ const Forms = () => {
           maxHeight={"90%"}
           width="80%"
           title="Détails sur l'analyse relative à la Volumetrie des Formations"
-          content={<Details element={'forms'}/>}
+          content={<Details element={"forms"} />}
         />
       )}
     </>
