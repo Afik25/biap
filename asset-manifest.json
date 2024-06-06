@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/biap/static/css/main.7f725316.css",
+    "main.css": "/biap/static/css/main.3b16a6ad.css",
     "main.js": "/biap/static/js/main.6187ea95.js",
     "static/media/Amiri-Regular.ttf": "/biap/static/media/Amiri-Regular.0666808e81a5c9f77f4f.ttf",
     "static/media/Shalimar-Regular.ttf": "/biap/static/media/Shalimar-Regular.10248c233c2e4f27901f.ttf",
@@ -9,11 +9,11 @@
     "static/media/Raleway-Regular.ttf": "/biap/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
     "index.html": "/biap/index.html",
     "static/media/getFetch.cjs": "/biap/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.7f725316.css.map": "/biap/static/css/main.7f725316.css.map",
+    "main.3b16a6ad.css.map": "/biap/static/css/main.3b16a6ad.css.map",
     "main.6187ea95.js.map": "/biap/static/js/main.6187ea95.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f725316.css",
+    "static/css/main.3b16a6ad.css",
     "static/js/main.6187ea95.js"
   ]
 }
