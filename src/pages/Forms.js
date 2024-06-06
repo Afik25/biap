@@ -448,6 +448,9 @@ const Forms = () => {
                     <option value={"decembre"}>Décembre</option>
                   </select>
                 </div>
+                <button className="button" onClick={() => setOpenModal(true)}>
+                  Details
+                </button>
               </div>
               <div className="content">
                 <div className="left">

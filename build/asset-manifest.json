@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/biap/static/css/main.e89e7ca8.css",
-    "main.js": "/biap/static/js/main.c4eb56c5.js",
+    "main.css": "/biap/static/css/main.d795469e.css",
+    "main.js": "/biap/static/js/main.6187ea95.js",
     "static/media/Amiri-Regular.ttf": "/biap/static/media/Amiri-Regular.0666808e81a5c9f77f4f.ttf",
     "static/media/Shalimar-Regular.ttf": "/biap/static/media/Shalimar-Regular.10248c233c2e4f27901f.ttf",
     "static/media/Raleway-Light.ttf": "/biap/static/media/Raleway-Light.58bcdae09d89ccd8d086.ttf",
@@ -9,11 +9,11 @@
     "static/media/Raleway-Regular.ttf": "/biap/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
     "index.html": "/biap/index.html",
     "static/media/getFetch.cjs": "/biap/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.e89e7ca8.css.map": "/biap/static/css/main.e89e7ca8.css.map",
-    "main.c4eb56c5.js.map": "/biap/static/js/main.c4eb56c5.js.map"
+    "main.d795469e.css.map": "/biap/static/css/main.d795469e.css.map",
+    "main.6187ea95.js.map": "/biap/static/js/main.6187ea95.js.map"
   },
   "entrypoints": [
-    "static/css/main.e89e7ca8.css",
-    "static/js/main.c4eb56c5.js"
+    "static/css/main.d795469e.css",
+    "static/js/main.6187ea95.js"
   ]
 }

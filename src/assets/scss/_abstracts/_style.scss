@@ -354,6 +354,7 @@ body {
       height: auto;
       max-height: calc(100% - 80px);
       overflow-y: auto;
+      overflow-x: hidden;
       padding: $size-1 0;
       .section-1,
       .section-2 {
