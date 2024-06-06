@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/biap/static/css/main.e4c2da97.css",
+    "main.js": "/biap/static/js/main.f519d84e.js",
+    "static/media/Amiri-Regular.ttf": "/biap/static/media/Amiri-Regular.0666808e81a5c9f77f4f.ttf",
+    "static/media/Shalimar-Regular.ttf": "/biap/static/media/Shalimar-Regular.10248c233c2e4f27901f.ttf",
+    "static/media/Raleway-Light.ttf": "/biap/static/media/Raleway-Light.58bcdae09d89ccd8d086.ttf",
+    "static/media/Raleway-Medium.ttf": "/biap/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
+    "static/media/Raleway-Regular.ttf": "/biap/static/media/Raleway-Regular.3927fa2a37e6f7f4c7c0.ttf",
+    "index.html": "/biap/index.html",
+    "static/media/getFetch.cjs": "/biap/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.e4c2da97.css.map": "/biap/static/css/main.e4c2da97.css.map",
+    "main.f519d84e.js.map": "/biap/static/js/main.f519d84e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4c2da97.css",
+    "static/js/main.f519d84e.js"
+  ]
+}
