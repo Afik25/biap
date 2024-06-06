@@ -339,7 +339,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-
       .t-1 {
         margin: 0;
         color: $white-color;
@@ -352,10 +351,10 @@ body {
     .body {
       width: 100%;
       height: auto;
-      max-height: calc(100% - 80px);
+      max-height: calc(100vh - 100px);
+      padding: $size-1 0;
       overflow-y: auto;
       overflow-x: hidden;
-      padding: $size-1 0;
       .section-1,
       .section-2 {
         width: 100%;
